@@ -1,0 +1,299 @@
+{
+    "nodes": [
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "headers": {},
+            "id": "5ffb8cb8a70f9e1daf3b24dd",
+            "is_symptom": false,
+            "key": "",
+            "name": "root",
+            "operator": "",
+            "order": 0,
+            "parent": {
+                "id": "",
+                "name": "",
+                "key": "",
+                "value": null,
+                "operator": ""
+            },
+            "type": "",
+            "value": null
+        },
+        {
+            "headers": {},
+            "id": "6027b7f8a70f9e57f66662e1",
+            "key": "feeling sick ?",
+            "name": "",
+            "operator": "eq",
+            "order": 0,
+            "parent": {
+                "id": "5ffb8cb8a70f9e1daf3b24dd",
+                "name": "",
+                "key": "",
+                "value": null,
+                "operator": ""
+            },
+            "value": "yes"
+        },
+        {
+            "headers": {},
+            "id": "60525714a70f9e3afdda3a0f",
+            "key": "feeling sick ?",
+            "name": "",
+            "operator": "eq",
+            "order": 0,
+            "parent": {
+                "id": "5ffb8cb8a70f9e1daf3b24dd",
+                "name": "root",
+                "key": "",
+                "value": null,
+                "operator": ""
+            },
+            "value": "no"
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "disease": null,
+            "headers": {},
+            "id": "602a4909a70f9e064f336e32",
+            "key": "Are you in a strong pain?",
+            "name": "",
+            "operator": "eq",
+            "order": 0,
+            "parent": {
+                "id": "6027b7f8a70f9e57f66662e1",
+                "name": "",
+                "key": "feeling sick ?",
+                "value": "true",
+                "operator": "eq"
+            },
+            "value": "no"
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "headers": {},
+            "id": "6027b9ada70f9e57f66662e8",
+            "key": "Are you in a strong pain?",
+            "name": "",
+            "operator": "eq",
+            "order": 0,
+            "parent": {
+                "id": "6027b7f8a70f9e57f66662e1",
+                "name": "",
+                "key": "feeling sick ?",
+                "value": "true",
+                "operator": "eq"
+            },
+            "value": "yes"
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "headers": {},
+            "id": "602a4b47a70f9e064f336e64",
+            "key": "do you have any of the following conditions? if yes select one of them",
+            "name": "",
+            "operator": "eq",
+            "order": 0,
+            "parent": {
+                "id": "6027b9ada70f9e57f66662e8",
+                "name": "",
+                "key": "Are you in a strong pain?",
+                "value": "yes",
+                "operator": "eq"
+            },
+            "value": "severe bleeding ?"
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "headers": {},
+            "id": "602a4b5ea70f9e064f336e65",
+            "key": "do you have any of the following conditions? if yes select one of them",
+            "name": "",
+            "operator": "eq",
+            "order": 0,
+            "parent": {
+                "id": "6027b9ada70f9e57f66662e8",
+                "name": "",
+                "key": "Are you in a strong pain?",
+                "value": "yes",
+                "operator": "eq"
+            },
+            "value": "headache or dizziness"
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "headers": {},
+            "id": "602a4b74a70f9e064f336e66",
+            "key": "do you have any of the following conditions? if yes select one of them",
+            "name": "",
+            "operator": "eq",
+            "order": 0,
+            "parent": {
+                "id": "6027b9ada70f9e57f66662e8",
+                "name": "",
+                "key": "Are you in a strong pain?",
+                "value": "yes",
+                "operator": "eq"
+            },
+            "value": "no, i dont have any of the above conditions"
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "headers": {},
+            "id": "602a4c23a70f9e064f336e69",
+            "key": "",
+            "name": "Please immediately call your doctor.",
+            "operator": "",
+            "order": 0,
+            "parent": {
+                "id": "602a4b47a70f9e064f336e64",
+                "name": "",
+                "key": "do you have any of the following conditions? if yes select one of them",
+                "value": "severe bleeding with or without dizziness,palpitation or light headedness",
+                "operator": "eq"
+            },
+            "value": null
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "headers": {},
+            "id": "602a4c50a70f9e064f336e6a",
+            "key": "",
+            "name": "If you missed your medicine take it and rest",
+            "operator": "",
+            "order": 0,
+            "parent": {
+                "id": "602a4b5ea70f9e064f336e65",
+                "name": "",
+                "key": "do you have any of the following conditions? if yes select one of them",
+                "value": "headache or dizziness",
+                "operator": "eq"
+            },
+            "value": null
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "headers": {},
+            "id": "605256eea70f9e3afdda3a0b",
+            "key": "How old are you?",
+            "name": "",
+            "operator": "gte",
+            "order": 0,
+            "parent": {
+                "name": "",
+                "id": "602a4b74a70f9e064f336e66",
+                "key": "do you have any of the following conditions? if yes select one of them",
+                "value": "yes",
+                "operator": "eq"
+            },
+            "value": "60"
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "headers": {},
+            "id": "605256ada70f9e3afdda3a08",
+            "key": "How old are you?",
+            "name": "",
+            "operator": "lt",
+            "value": "60",
+            "order": 0,
+            "parent": {
+                "name": "",
+                "id": "602a4b74a70f9e064f336e66",
+                "key": "do you have any of the following conditions? if yes select one of them",
+                "value": "yes",
+                "operator": "eq"
+            }
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "headers": {},
+            "id": "605256eea70f9e3afdda3a0a",
+            "key": "",
+            "name": "you are very ok",
+            "operator": "",
+            "order": 0,
+            "parent": {
+                "id": "602a4909a70f9e064f336e32",
+                "name": "",
+                "key": "Are you in a strong pain?",
+                "value": "no",
+                "operator": "eq"
+            },
+            "value": null
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "headers": {},
+            "id": "605256eea70f9e3afdda3a0a",
+            "key": "",
+            "name": "you will be ok",
+            "operator": "",
+            "order": 0,
+            "parent": {
+                "id": "60525714a70f9e3afdda3a0f",
+                "key": "feeling sick ?",
+                "name": "",
+                "value": "no",
+                "operator": "eq"
+            },
+            "value": null
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "headers": {},
+            "id": "605256ada70f9e3afdda3a06",
+            "key": "",
+            "name": "You are dieing",
+            "operator": "",
+            "order": 0,
+            "parent": {
+                "name": "",
+                "id": "605256eea70f9e3afdda3a0b",
+                "key": "How old are you?",
+                "operator": "gte",
+                "value": "60"
+            },
+            "value": null
+        },
+        {
+            "cat_id": "",
+            "cat_name": "",
+            "content": null,
+            "headers": {},
+            "id": "60525387a70f9e3afdda39f8",
+            "key": "",
+            "name": "Do not worry you would not die",
+            "operator": "",
+            "order": 0,
+            "parent": {
+                "name": "",
+                "id": "605256ada70f9e3afdda3a08",
+                "key": "How old are you?",
+                "operator": "lt",
+                "value": "60"
+            },
+            "value": null
+        }
+    ]
+}
